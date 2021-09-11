@@ -20,9 +20,9 @@ Born and raised in the city of Pavlodar. I am interested in music, games and dra
 --------------------------------------------------------------------
 ### Education
 
-* **_2015-2019_**\
-  * **Bachelor, Heat Power Engineer:** Almaty University of Power Engineer and Telecommunications (Almaty)\
-* **_2019-2022(expected)_**\
+* **_2015-2019_**
+  * **Bachelor, Heat Power Engineer:** Almaty University of Power Engineer and Telecommunications (Almaty)
+* **_2019-2022(expected)_**
   * **Programmer:** Hello Alem (School 42, Nur-Sultan)
 
 --------------------------------------------------------------------
@@ -35,7 +35,7 @@ Born and raised in the city of Pavlodar. I am interested in music, games and dra
 4) VS Code
 5) Docker
 
-### Hard Skills:
+### Soft Skills:
 
 * Creativity
 * Adaptibility
@@ -44,11 +44,21 @@ Born and raised in the city of Pavlodar. I am interested in music, games and dra
 * Critical thinking
 * Self-education
 
+### Hobbies:
+
+* Reading fantasy book
+* Playing on piano
+* Yoga
+* Playing video games
+* Playing table tennis
+* Drawing
+
 ----------------------------------------------
 
 ### Work experience:
 
-    Non-profit projects at Alem Programming School
+1) Non-profit projects at Alem Programming School
+2) Creating a video game on the Unity engine
 
 #### Code example:
 
@@ -101,5 +111,10 @@ function decToBin(x) {
 
 * __*2021 september - now:*__ Rolling scope school. Front-end developer
 
+----------------------------------------------
 
+### Languages:
 
+* English (intermediate)
+* Russian (fluent)
+* Kazakh (native speaker)
