@@ -1,1 +1,1 @@
-https://ButerBrot359.github.io/rsschool-cv/cv
+https://ButerBrot359.github.io/rsschool-cv/
