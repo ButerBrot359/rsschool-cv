@@ -1,0 +1,33 @@
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0 5px
+    }
+
+    .footer_content {
+        width: 81%;
+        margin:0;
+    }
+    .resume .resume_left, .resume .resume_right {
+        width: 90%
+    }
+    .logo_rs img, .logo_github a img{
+        height: 30px;
+    }
+    .creation_date {
+        font-size: 15px;
+    }
+    .resume .resume_right .resume_hobby ul li:before {
+        display: none;
+    }
+   
+}
