@@ -2,21 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>RS School-CV-HTML</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+        <link rel="stylesheet" href="mobile_style.css">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
-        <main>
-        <div class="resume">
-            <div class="resume_left">
+        
+        <main class="resume">
+
+            <section class="resume_left">
                 <div class="resume_profile">
                   <img src="img/prof_photo.jpeg" alt="profile_pic">
                 </div>
                 <div class="resume_content">
                   <div class="resume_item resume_info">
                     <div class="title">
-                      <p class="bold">temirov batyrkhan</p>
+                      <h1 class="bold">temirov batyrkhan</h1>
                       <p class="regular">Junior Frontend Developer</p>
                     </div>
                     <ul>
@@ -48,7 +55,7 @@
                   </div>
                   <div class="resume_item resume_skills">
                     <div class="title">
-                      <p class="bold">skill's</p>
+                      <h2 class="bold">skill's</h2>
                     </div>
                     <ul>
                       <li>
@@ -127,7 +134,7 @@
                   </div>
                   <div class="resume_item resume_soft_skills">
                     <div class="title">
-                      <p class="bold">Soft skill's</p>
+                      <h2 class="bold">Soft skill's</h2>
                     </div>
                     <ul>
                       <li>
@@ -162,9 +169,9 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="resume_item resume_soft_skills">
+                  <div class="resume_item languages">
                     <div class="title">
-                      <p class="bold">Languages</p>
+                      <h2 class="bold">Languages</h2>
                     </div>
                     <ul>
                       <li>
@@ -186,7 +193,7 @@
                   </div>
                   <div class="resume_item resume_social">
                     <div class="title">
-                      <p class="bold">Social</p>
+                      <h2 class="bold">Social</h2>
                     </div>
                     <ul>
                         <li>
@@ -228,11 +235,11 @@
                     </ul>
                   </div>
                 </div>
-             </div>
-            <div class="resume_right">
+             </section>
+            <section class="resume_right">
                 <div class="resume_item resume_about">
                     <div class="title">
-                        <p class="bold">Briefly About Myself</p>
+                        <h2 class="bold">Briefly About Myself</h2>
                     </div>
                     <p>
                         Born and raised in the city of Pavlodar. I am interested in music, games and drawing. In 2019 I received my Bachelor’s degree in Thermal Engineering. At the moment, I am actively learning programming.
@@ -240,24 +247,24 @@
                 </div>
                 <div class="resume_item resume_education">
                     <div class="title">
-                        <p class="bold">Education</p>
+                        <h2 class="bold">Education</h2>
                     </div>
                     <ul>
                         <li>
                             <div class="date">2015 - 2019</div>
                             <div class="info">
-                                <p class="semi-bold">
+                                <h3 class="semi-bold">
                                     Bachelor, Heat Power Engineer:
-                                </p>
+                                </h3>
                                 <p>Almaty University of Power Engineer and Telecommunications (Almaty)</p>
                             </div>
                         </li>
                         <li>
                             <div class="date">2019 - 2022(expected)</div>
                             <div class="info">
-                                <p class="semi-bold">
+                                <h3 class="semi-bold">
                                     Programmer:
-                                </p>
+                                </h3>
                                 <p>Hello Alem (School 42, Nur-Sultan)</p>
                             </div>
                         </li>
@@ -265,7 +272,7 @@
                 </div>
                 <div class="resume_item resume_hobby">
                     <div class="title">
-                        <p class="bold">Hobby</p>
+                        <h2 class="bold">Hobby</h2>
                     </div>
                     <ul>
                         <li><i class="fas fa-book"></i></li>
@@ -277,7 +284,7 @@
                 </div>
                 <div class="resume_item resume_work">
                     <div class="title">
-                        <p class="bold">Work Experience</p>
+                        <h2 class="bold">Work Experience</h2>
                     </div>
                     <ul>
                         <li>
@@ -309,55 +316,112 @@
                 </div>
                 <div class="resume_item resume_code">
                     <div class="title">
-                        <p class="bold">Code example</p>
+                        <h2 class="bold">Code example</h2>
                     </div>
-                    <p class="semi-bold">
+                    <h4 class="semi-bold">
                         Get the Middle Character KATA from Codewars:
-                    </p>
+                    </h4>
                     <p>
                         In this kata you’re expected to sort an array of 32-bit integers in ascending order of the number of on bits they have.In cases where two numbers have the same number of bits, compare their real values instead.
                     </p>
-                    <img src="img/code_example.png" alt="code_example">
+                    <!-- <img src="img/code_example.png" alt="code_example"> -->
+                    <pre>
+                    <code class="js">     
+  function sortByBit(arr) {
+      arr.sort(function(a, b) {
+          if (decToBin(a) == decToBin(b)) {
+              return a - b
+          } else {
+              return decToBin(a) - decToBin(b);
+          } 
+      });
+      return arr
+  };
+
+  function decToBin(x) {
+      return Number(x).toString(2).split('0').join('')
+  };                      
+                    </code>
+                  </pre>
                 </div>
+                <div class="resume_item resume_projects">
+                  <div class="title">
+                      <h2 class="bold">Projects</h2>
+                  </div>
+                  <ul>
+                      <li>
+                          <div class="date"><a href="https://github.com/ButerBrot359/forum" target="_blank">Forum</a></div>
+                          <div class="info">
+                              <p class="semi-bold">
+                                Create a forum project with the ability to create posts, write comments, etc.
+                              </p>
+                              <p>
+                                Technologies: HTML, CSS, JS, AJAX, Golang, RestAPI, MySQL
+                              </p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="date"><a href="https://github.com/ButerBrot359/make-your-game" target="_blank">Make your game</a></div>
+                          <div class="info">
+                              <p class="semi-bold">
+                                  Creating a Duck Hunt video game
+                              </p>
+                              <p>
+                                Technologies: JS, DOM, RequestAnimationFrame, Sound effects
+                              </p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="date"><a href="https://github.com/ButerBrot359/make-your-game" target="_blank">Landing Page</a></div>
+                          <div class="info">
+                              <p class="semi-bold">
+                                  Create landing page
+                              </p>
+                              <p>
+                                Technologies: HTML, CSS, Flex, Grid, SASS, JS, Webpack
+                              </p>
+                          </div>
+                      </li>
+                  </ul>
+                  
+              </div>
                 <div class="resume_item courses">
                     <div class="title">
-                        <p class="bold">Qualification courses</p>
+                        <h2 class="bold">Qualification courses</h2>
                     </div>
                     <ul>
                         <li>
                             <div class="date">2021 May</div>
                             <div class="info">
-                                <p class="semi-bold">
+                                <h3 class="semi-bold">
                                     Online course on Udemy
-                                </p>
+                                </h3>
                                 <p>JavaScript from zero to expert</p>
                             </div>
                         </li>
                         <li>
                             <div class="date">2021 July</div>
                             <div class="info">
-                                <p class="semi-bold">
+                                <h3 class="semi-bold">
                                     Online course on Udemy
-                                </p>
+                                </h3>
                                 <p>Websocket</p>
                             </div>
                         </li>
                         <li>
                             <div class="date">2021 September - now</div>
                             <div class="info">
-                                <p class="semi-bold">
+                                <h3 class="semi-bold">
                                     Rolling scope school
-                                </p>
+                                </h3>
                                 <p>Front-end developer</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer_content">
+            </section>
+          </main>
+        <footer class="footer_content">
             <div class="logo_github">
                 <a href="https://github.com/ButerBrot359" target="_blank">
                     <img src="img/github.svg" alt="github_icon">
@@ -369,7 +433,7 @@
                 </a>
             </div>
             <span class="creation_date">Created<br> in <br>2021</span>
-        </div>
-    </footer>
+        </footer>
+    
     </body>
 </html>
